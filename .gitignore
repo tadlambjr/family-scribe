@@ -33,3 +33,6 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+# Keep our personal family history out of the respositry
+db/data/20240831224860_lamb_family_history.rb

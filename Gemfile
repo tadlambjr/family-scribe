@@ -26,6 +26,14 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
+gem "d3-rails"
+
+# Data migrations
+gem "data_migrate"
+
+# Allow for tagging
+#gem 'acts-as-taggable-on'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
 

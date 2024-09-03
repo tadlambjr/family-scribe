@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyText
+  start: 2024-08-24 14:03:05
+  end: 2024-08-24 14:03:05
+  is_annual: false
+  color: MyText
+  notes: MyText
+
+two:
+  name: MyText
+  start: 2024-08-24 14:03:05
+  end: 2024-08-24 14:03:05
+  is_annual: false
+  color: MyText
+  notes: MyText
