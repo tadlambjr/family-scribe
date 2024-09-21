@@ -5,28 +5,15 @@
   </p>
 
   <p>
-    <strong>Start:</strong>
-    <%= event.start %>
+    <strong>Start:</strong> <%= event.start %>
+    <strong>End:</strong> <%= event.end %>
   </p>
 
-  <p>
-    <strong>End:</strong>
-    <%= event.end %>
-  </p>
-
-  <p>
-    <strong>Is annual:</strong>
-    <%= event.is_annual %>
-  </p>
-
-  <p>
-    <strong>Color:</strong>
-    <%= event.color %>
-  </p>
-
+  <% if event.notes %>
   <p>
     <strong>Notes:</strong>
     <%= event.notes %>
   </p>
+  <% end %>
 
 </div>

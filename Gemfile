@@ -28,6 +28,9 @@ gem "jbuilder"
 
 gem "d3-rails"
 
+# For bundling js, along with propshaft
+gem "jsbundling-rails", "~> 1.3"
+
 # Data migrations
 gem "data_migrate"
 
@@ -74,4 +77,3 @@ group :test do
   gem "selenium-webdriver"
 end
 
-gem "jsbundling-rails", "~> 1.3"

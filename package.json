@@ -1,7 +1,13 @@
 {
-  "name": "app",
+  "name": "family-scribe",
   "private": true,
+  "license": "MIT",
   "scripts": {
-    "build": "esbuild app/javascript/*.* --bundle --sourcemap --format=esm --outdir=app/assets/builds --public-path=/assets"
+    "build": "esbuild app/javascript/*.* --bundle --sourcemap --format=esm --outdir=app/assets/builds --public-path=/assets",
+    "build:css": "sass ./app/assets/stylesheets/application.sass.scss:./app/assets/builds/application.css --no-source-map --load-path=node_modules"
+  },
+  "dependencies": {
+    "esbuild": "^0.17.0",
+    "sass": "^1.58.0"
   }
 }

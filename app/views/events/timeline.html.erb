@@ -1,4 +1,9 @@
-<%= javascript_include_tag "" %>
+<div id="timeline"></div>
+
+<%= content_for :head do %>
+  <%= javascript_include_tag "timeline" %>
+<% end %>
+
 <p style="color: green"><%= notice %></p>
 
 <h1>Events</h1>

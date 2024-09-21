@@ -4,9 +4,9 @@ class EventsController < ApplicationController
   # GET /timeline
   def timeline
     current_user = User.find(1)
-    events = current_user.events.order(start: :asc)
+    @events = current_user.events.order(start: :asc)
 
-    timeline_data = events.map do |event|
+    @timeline_data = @events.map do |event|
       {
         id: event.id,
         name: event.name,
@@ -17,7 +17,10 @@ class EventsController < ApplicationController
       }
     end
 
-    render json: timeline_data
+    respond_to do |format|
+      format.html { @events }
+      format.json { render json: @timeline_data }
+    end
   end
 
   # GET /events or /events.json
